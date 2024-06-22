@@ -7,7 +7,7 @@ const paginate = {
 
 const config = Object.freeze({
   paginate,
-  API_HOST: process.env.VITE_API_HOST
+  API_HOST: import.meta.env.VITE_API_HOST
 });
 
 export default config;
