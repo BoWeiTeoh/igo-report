@@ -1,0 +1,81 @@
+.ReactTable {
+  .rt-thead,
+  .rt-tfoot {
+    padding-right: 7px; // table body scroll width
+  }
+
+  .rt-tbody {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .rt-tr {
+    //display: -webkit-inline-box !important;
+  }
+
+  .rt-thead .rt-th,
+  .rt-td {
+    transition: none;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    border-right: 0 !important;
+    padding: 10px;
+
+    ._body {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 4px;
+    }
+  }
+
+  .rt-tfoot {
+    background: #fff;
+
+    .rt-td {
+      min-height: 0;
+      padding: 5px 10px;
+    }
+  }
+
+  .rt-checkbox {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rt-taggregation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+
+    .rt-taggregation-content {
+      display: flex;
+      flex-direction: column;
+      width: 250px;
+      gap: 5px;
+
+      .rt-taggregation-content-row {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td {
+  transition: none;
+}
+
+.ReactTable.table-compact {
+  .-pagination {
+    font-size: 0.9em;
+
+    .-pageSizeOptions,
+    .-pageInfoText {
+      display: none;
+    }
+  }
+}

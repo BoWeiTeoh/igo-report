@@ -1,0 +1,27 @@
+@import "../variables/var";
+
+.btn-group {
+  button {
+    margin-left: $grid-padding * 2;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.b2-btn-group {
+  button {
+    margin-left: $grid-padding * 2;
+
+    // &:first-child {
+    //   margin-left: 0 !important;
+    // }
+  }
+
+  &.btn-group-sm {
+    button {
+      margin-left: $grid-padding * 1;
+    }
+  }
+}

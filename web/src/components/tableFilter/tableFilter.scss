@@ -1,0 +1,153 @@
+/**@import "../../color";
+*/
+.table-filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.table-filter {
+  display: flex;
+  flex-wrap: wrap;
+  /*padding: 0 0 10px;*/
+  position: relative;
+  z-index: 100;
+  justify-content: flex-start;
+  gap: 10px;
+
+  ._input,
+  .btn {
+    //height: 35px;
+
+    .icon {
+      font-size: 18px;
+    }
+  }
+
+  .btn {
+    .icon {
+      margin-top: -2px;
+      display: inline-block;
+    }
+  }
+
+  .custom-form-select,
+  .form-control {
+    width: var(--filter-input-width);
+  }
+
+  ::placeholder {
+    color: #999999;
+  }
+}
+
+.table-filter-container .table-filter-wrapper .k2button-group {
+  position: relative;
+  justify-content: flex-end;
+  bottom: 10px;
+  right: 0;
+  top: 0;
+}
+
+.table-filter .table-filter-item {
+  white-space: nowrap;
+  // margin-right: 15px;
+  // margin-bottom: 1rem;
+}
+
+.table-filter .table-filter-item .mb-3 {
+  margin-bottom: 0 !important;
+}
+
+.table-filter .form-control,
+.table-filter input,
+.form-select {
+  /*background: #181818;*/
+  /*border-color: transparent;*/
+  /*color: #d3d3d3;*/
+  color: black;
+}
+
+.creatable-input .label,
+.table-filter .table-filter-item .label {
+  font-size: 10px;
+  padding-bottom: 4px;
+  color: #9f9f9f;
+  display: none;
+}
+
+.table-filter .table-filter-item .dropdown-button {
+  min-width: 50px;
+}
+
+.table-filter .table-filter-item .auto-refresh .dropdown-button {
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 80px;
+}
+
+.table-filter .b2-form-group,
+.table-filter .form-group {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.table-filter .b2-form-group .form-control,
+.table-filter .form-group .form-control {
+  padding: 4px 15px;
+  align-items: center;
+  display: flex;
+}
+
+.table-filter > button {
+  margin-right: 5px;
+}
+
+.table-filter .react-datepicker__close-icon {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-image: none;
+}
+
+.option-list > label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.option-list > label:last-child {
+  margin-bottom: 0;
+}
+
+.table-filter .k2button {
+  padding: 5px 20px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.table-filter .day-select-container {
+  display: flex;
+}
+
+.table-filter .days-wrapper {
+  background: #f0f0f0;
+  /*width: 50px;*/
+}
+
+.select-error {
+  border: 2px solid #DC3545 !important;
+  border-radius: 16px;
+}
+
+.table-filter .days-wrapper p {
+  padding: 10px 15px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.table-filter .days-wrapper p:hover {
+  background-color: #fff;
+}

@@ -1,0 +1,151 @@
+.base-page {
+  position: relative;
+  padding: 20px 5px 0;
+  top: -150px;
+}
+
+.base-page-header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  h5 {
+    margin-right: 20px;
+    color: #25E0FF;
+    padding-top: 10px;
+  }
+}
+
+.base-page-header {
+  //text-align: right;
+  //margin-bottom: 20px;
+  //display: flex;
+  //justify-content: space-between;
+  //
+  //._title {
+  //    display: flex;
+  //    align-items: flex-end;
+  //
+  //    h2 {
+  //        margin-bottom: 0;
+  //        font-weight: 700;
+  //        font-size: 1.6em;
+  //        line-height: 1;
+  //    }
+  //}
+}
+
+.page-title {
+  //border-bottom: 1px solid var(--border-color);
+  padding: 10px 0;
+  margin-bottom: 10px;
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 34px;
+    font-weight: 700;
+  }
+}
+
+.base-page-content {
+  //padding: 10px 0;
+  // flex-grow: 1;
+  //padding: 20px 12px;
+  //border-top: 1px solid #353435;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.base-page-buttons {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.base-page-buttons > button {
+  margin-right: 7px;
+}
+
+.main-tab {
+  height: 80px;
+  position: relative;
+
+  ._bg {
+    background: #000000;
+    opacity: 0.35;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  ._item {
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    > div {
+      border-bottom: 4px solid transparent;
+      display: flex;
+      align-items: center;
+      height: 45px;
+      cursor: pointer;
+
+      span {
+        font-size: 1.4em;
+        color: #ffffff;
+        opacity: 0.5;
+      }
+
+      &:hover,
+      &._active {
+        border-color: #fff;
+
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.base-page-side-container {
+  display: flex;
+}
+
+.base-page-side {
+  //margin-right: 20px;
+}
+
+.hint-bill-report-content {
+  margin: 20px;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

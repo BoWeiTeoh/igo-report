@@ -1,0 +1,44 @@
+@import "./variables/var";
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.bg-primary-highlight {
+  background-color: $color-primary-highlight;
+}
+
+.bg-secondary {
+  background-color: $color-secondary;
+}
+
+.bg-secondary-highlight {
+  background-color: $color-secondary-highlight;
+}
+
+.bg-danger {
+  background-color: $color-danger;
+}
+
+.bg-danger-highlight {
+  background-color: $color-danger-highlight;
+}
+
+img {
+  max-width: 100%;
+}
+
+.margin-bottom {
+  margin-bottom: $margin-md;
+}
+
+.padding-vertical {
+  padding-top: $padding-section;
+  padding-bottom: $padding-section;
+}

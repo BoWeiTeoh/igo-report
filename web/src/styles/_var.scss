@@ -1,0 +1,92 @@
+:root {
+  --background: #222a35;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+  --color-primary: #3f8cff;
+  --color-primary-rgb: 63, 140, 255;
+  --color-primary2: #042893;
+  --color-primarylight: #679fff;
+
+  --color-third: #15c0e6;
+  --color-four: #6d5dd3;
+
+  --color-pink: 196, 24, 230;
+
+  --color-primary-border: #042893;
+  --color-bg: #222a35;
+  --color-secondary: #93969b;
+  --color-secondary2: #e6edf5;
+  --color-disabled: #eee;
+  --color-border: #dcdcdc;
+  --text-color: #001737;
+  --text-color-dark: #222a35;
+  --text-color-grey: #91929e;
+  --text-color-success: #00a517;
+  --text-color-success2: #00d097;
+  --text-color-light: #fafafa;
+  --font-md: 13px;
+  --font-lg: 32px;
+  --padding-container: 15px;
+  --padding-list-item: 10px 15px;
+  --light-bg: #f1f1f1;
+  --border-radius: 2px;
+  --margin: 8px;
+  --sideBar-width: 220px;
+  --card-bg: #222a35;
+  --wrapper-bg: #151a2d;
+  --card-bg2: #151a2d;
+  --card-bg3: #2b3542;
+  --progress: #4b38b3;
+  --border-color: #e6ebf5;
+  --progressTrack: #2a2f34;
+  --color-success: #0ecb81;
+
+  --bs-primary-rgb: 63, 140, 255;
+  --bs-success-rgb: 14, 203, 129;
+  --bs-success-rgb2: 224, 249, 242;
+
+  --filter-input-width: 200px;
+}
+
+//
+//[data-theme='light'] {
+//    --background: white;
+//    --text-primary: black;
+//    --text-secondary: royalblue;
+//    --accent: purple;
+//    --color-primary: #ffc000;
+//    --color-bg: #f1f1f1;
+//    --color-secondary: #93969b;
+//    --color-disabled: #eee;
+//    --text-color: #001737;
+//    --text-color-dark: #161616;
+//    --text-color-light: #fafafa;
+//    --font-md: 13px;
+//    --font-lg: 32px;
+//    --padding-container: 15px;
+//    --padding-list-item: 10px 15px;
+//    --light-bg: #f1f1f1;
+//    --border-radius: 2px;
+//    --border-color: rgba(72, 94, 144, 0.16);
+//    --margin: 8px;
+//    --sideBar-width: 220px;
+//    --card-bg: #ffffff;
+//    --wrapper-bg: #f5f6f7;
+//    --card-bg2: #151a2d;
+//    --card-bg3: #2b3542;
+//    --progress: #4b38b3;
+//    --progressTrack: #2a2f34;
+//    --color-success: #0ecb81;
+//}
+
+.App[data-theme="light"] {
+  .modal-header .btn-close {
+    -webkit-box-shadow: 0 5px 20px rgba(80, 77, 77, 0.85);
+    box-shadow: 0 5px 20px rgba(80, 77, 77, 0.85);
+  }
+
+  .select:before {
+    filter: none;
+  }
+}

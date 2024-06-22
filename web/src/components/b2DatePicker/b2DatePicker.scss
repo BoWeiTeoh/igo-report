@@ -1,0 +1,36 @@
+@import "react-datepicker/dist/react-datepicker.css";
+
+.custom-datepicker {
+  display: flex;
+  align-items: center;
+
+  .date-picker-icons-wrapper {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .react-datepicker-wrapper {
+    input {
+      border: 0;
+      padding: 0;
+      outline: 0 !important;
+      width: 100%;
+      color: black;
+      background: #ebebeb;
+    }
+  }
+
+  .react-datepicker__close-icon {
+    padding: 0;
+  }
+
+  .react-datepicker__day--selected,
+  .react-datepicker__day--keyboard-selected,
+  .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+    background: #25E0FF;
+    color: black;
+  }
+}
+

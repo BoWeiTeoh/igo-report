@@ -1,0 +1,67 @@
+$tab-height: 40px;
+$tab-width: 120px;
+
+.b2tab {
+  display: flex;
+  position: relative;
+  background-color: var(--color-secondary2);
+  padding: 0.4em;
+  border-radius: 99px; // just a high number to create pill effect
+  * {
+    z-index: 2;
+  }
+
+  ._tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    border-radius: 99px; // just a high number to create pill effect
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+  }
+
+  ._badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    transition: 0.15s ease-in;
+  }
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked {
+      & + label {
+        color: #fff;
+
+        & > ._badge {
+          background-color: var(--color-primarylight);
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .glider,
+  ._tab {
+    height: $tab-height;
+    width: $tab-width;
+  }
+
+  .glider {
+    position: absolute;
+    display: flex;
+    background-color: var(--color-primary);
+    z-index: 1;
+    border-radius: 99px; // just a high number to create pill effect
+    transition: 0.25s ease-out;
+  }
+}

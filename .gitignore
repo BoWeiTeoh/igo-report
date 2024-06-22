@@ -1,0 +1,10 @@
+adminWeb/.vite/
+.DS_Store
+.idea/
+node_modules/
+yarn-error.log
+package-lock.json
+build/
+yarn.lock
+.env
+export/

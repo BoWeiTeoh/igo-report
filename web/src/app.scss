@@ -1,0 +1,194 @@
+@import "./styles/_var.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: sans-serif;
+}
+
+body,
+a {
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.modal-open {
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.container-width {
+  width: 1024px;
+  margin: auto;
+  max-width: 100%;
+  padding: 0 40px;
+  position: relative;
+}
+
+.color-secondary {
+  color: #ffff40;
+}
+
+.Toastify {
+  font-size: 12px;
+}
+
+.text-box {
+  background: rgba(208, 208, 208, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.text-primary,
+.text-main {
+  font-weight: 500;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-sub {
+  color: var(--color-secondary);
+  font-size: 0.9em;
+}
+
+.text-selected {
+  color: #0d6efd;
+}
+
+.islink,
+.is-link {
+  color: var(--color-primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.b2form {
+  .b2col {
+    margin-bottom: 20px;
+  }
+}
+
+.min-vw-90 {
+  min-width: 90vw !important;
+}
+
+.modal-body {
+  .b2form {
+    padding: 0 10px;
+  }
+}
+
+.dashboard {
+  width:150px;
+  height:30px;
+  margin-right:5px;
+  font-size: 12px;
+}
+
+.successCls {
+  color: #161616 !important;
+  background-color: #0ecb81 !important;
+}
+
+.dashboard.successCls:hover {
+  background-color: #0ecb81 !important; /* 使悬停时的颜色与正常状态相同 */
+}
+
+/* Container styles */
+.game-container {
+  display: flex;
+  //flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: transparent; /* Make background transparent */
+  height: auto; /* Fixed vertical size */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Card styles */
+.game-card {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the card */
+  border: 1px solid rgba(224, 224, 224, 0.8); /* Light border */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+  width: 135px; /* Fixed width */
+  height: 190px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles */
+.game-image {
+  max-width: 135px; /* Maximum width */
+  max-height: 190px; /* Maximum height */
+  width: auto; /* Allow width to adjust */
+  height: auto; /* Allow height to adjust */
+}
+
+/* Details styles */
+.game-details {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+.icon-label-wrapper {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  flex-grow: 1; /* Allow the wrapper to take available space */
+  overflow: hidden; /* Prevent overflow of child elements */
+}
+
+.status-icon {
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+  margin-right: 8px; /* Space between icon and label */
+}
+
+/* Description styles */
+.game-description {
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .game-card {
+    width: calc(50% - 20px); /* Adjusting the width for medium screens */
+  }
+}
+
+/* For screens with a maximum width of 480px */
+@media (max-width: 480px) {
+  .game-card {
+    width: calc(100% - 20px); /* Adjusting the width for small screens */
+  }
+}
+

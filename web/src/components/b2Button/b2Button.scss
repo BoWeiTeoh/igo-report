@@ -1,0 +1,64 @@
+.btn-gray {
+  color: white;
+  background: transparent linear-gradient(180deg, #58595e 0%, #212224 100%) 0 0 no-repeat padding-box;
+
+  &:hover {
+    background: transparent linear-gradient(180deg, #66676e 0%, #2d2f31 100%) 0 0 no-repeat padding-box;
+  }
+}
+
+.btn-info {
+  color: #fff;
+
+  //background-color: $color-info;
+  //
+  &:hover {
+    color: #fff;
+    //background-color: $color-info-hover;
+  }
+}
+
+.btn-search.btn.btn-primary {
+  background: #25e0ff;
+  color: black;
+}
+
+.btn-search.btn.btn-primary.disabled {
+  background: white;
+}
+
+.btn-export.btn.btn-primary {
+  background: #90ee90;
+  color: black;
+}
+
+.btn-regenerate.btn.btn-primary {
+  background: #fdfa72;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn-regenerate.btn.btn-primary.disabled {
+  background: grey;
+  color: white;
+  border: 1px solid black;
+}
+
+.btn-summary.btn.btn-primary {
+  background: #25e0ff;
+  color: black;
+}
+
+.modal-cancel.btn.btn-primary {
+  background: white;
+  color: #25e0ff;
+  border: 1px solid #25e0ff;
+  min-width: 100px;
+}
+
+.modal-confirm.btn.btn-primary {
+  background: #25e0ff;
+  color: black;
+  border: 1px solid #25e0ff;
+  min-width: 100px;
+}
